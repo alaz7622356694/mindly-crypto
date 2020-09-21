@@ -46,7 +46,7 @@ class FormComponent extends Component {
  
 
   addCrypto = (e) => {
-   e.preventDefault();
+   
     let Crypto = {
       cryptocurrency: this.state.value,
       amount: this.state.amount,
@@ -55,8 +55,9 @@ class FormComponent extends Component {
       currentMarketValue: this.markets.get(this.state.value),
     };
 
-    CryptoService.addCrypto(Crypto).then((res) => this.getCrypto() );
-    ;
+    CryptoService.addCrypto(Crypto).then((res) => {
+      this.setState({ message: "Crypto added successfuly." } );
+    });
   };
 
   changeCryptoHandler = (event) => {
