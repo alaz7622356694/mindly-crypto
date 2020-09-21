@@ -45,7 +45,7 @@ class FormComponent extends Component {
   };
  
 
-  addCrypto(e)  {
+  addCrypto(crypto)  {
       
     let Crypto = {
       cryptocurrency: this.state.value,
@@ -145,7 +145,7 @@ class FormComponent extends Component {
               </div>
               <br></br>
             </div>
-            <button className="btn btn-primary" onClick={this.addCrypto}>
+            <button className="btn btn-primary" onClick={ (e) =>{this.addCrypto(crypto)}}>
               Save
             </button>
           </form>
