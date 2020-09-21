@@ -13,7 +13,7 @@ class CryptoService {
   }
 
   addCrypto(crypto) {
-    const res = await axios.post(CRYPTO_API_BASE_URL, crypto);
+    const res = axios.post(CRYPTO_API_BASE_URL, crypto);
       return res;
   }
 
