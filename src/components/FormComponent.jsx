@@ -50,7 +50,8 @@ class FormComponent extends Component {
     CryptoService.getCrypto();
   }
 
-  addCrypto()  {
+  addCrypto(e)  {
+      e.preventDefault();
     let Crypto = {
       cryptocurrency: this.state.value,
       amount: this.state.amount,
