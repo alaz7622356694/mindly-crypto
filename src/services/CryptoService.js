@@ -12,8 +12,8 @@ class CryptoService {
     return axios.get(CRYPTO_API_BASE_URL + "/" + cryptoId).then((res) => res);
   }
 
-  addCrypto(id) {
-    return axios.post(CRYPTO_API_BASE_URL + id).then((res) => res);
+  addCrypto(cryptoId) {
+    return axios.post(CRYPTO_API_BASE_URL , cryptoId).then((res) => res);
       
   }
 
