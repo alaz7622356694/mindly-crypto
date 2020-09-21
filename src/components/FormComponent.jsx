@@ -61,7 +61,7 @@ class FormComponent extends Component {
     };
 
     CryptoService.addCrypto(Crypto).then((res) => {
-      this.setState({ message: "Crypto added successfuly." } , this.reloadCryptoList );
+      this.setState({ message: "Crypto added successfuly." } );
     });
     
   };
