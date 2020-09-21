@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mindly-crypto/precache-manifest.d9d5116a412ad008e013f3d281bf9673.js"
+  "/mindly-crypto/precache-manifest.2c69bb71ce14b00fe7c763b26577ed5e.js"
 );
 
 self.addEventListener('message', (event) => {
