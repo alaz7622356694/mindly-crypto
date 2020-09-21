@@ -9,7 +9,7 @@ class ListCryptoComponent extends Component {
       message: null,
     };
 
-    this.addCrypto = this.addCrypto.bind(this);
+    /*this.addCrypto = this.addCrypto.bind(this);*/
     this.reloadCryptoList = this.reloadCryptoList.bind(this);
     this.deleteCrypto = this.deleteCrypto.bind(this);
   }
@@ -24,9 +24,9 @@ class ListCryptoComponent extends Component {
     });
   }
 
-  addCrypto() {
+  /*addCrypto() {
     window.localStorage.removeItem("cryptoId");
-  }
+  }*/
 
   deleteCrypto(id) {
     CryptoService.deleteCrypto(id).then((res) => {
