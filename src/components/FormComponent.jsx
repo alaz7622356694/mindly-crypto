@@ -46,8 +46,7 @@ class FormComponent extends Component {
  
 
   addCrypto = (e) => {
-  
-
+   
     let Crypto = {
       cryptocurrency: this.state.value,
       amount: this.state.amount,
