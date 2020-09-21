@@ -7,7 +7,7 @@ class CryptoService {
   cryptos = [];
 
   getCrypto() {
-    return axios.get(CRYPTO_API_BASE_URL).then(res=>{this.cryptos=res});
+    return axios.get(CRYPTO_API_BASE_URL).then(res=>{this.cryptos=res.data});
   }
 
   getCryptoById(cryptoId) {
