@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mindly-crypto/static/css/main.821d5153.chunk.css",
-    "main.js": "/mindly-crypto/static/js/main.c83c76cd.chunk.js",
-    "main.js.map": "/mindly-crypto/static/js/main.c83c76cd.chunk.js.map",
+    "main.js": "/mindly-crypto/static/js/main.8f1d0b08.chunk.js",
+    "main.js.map": "/mindly-crypto/static/js/main.8f1d0b08.chunk.js.map",
     "runtime-main.js": "/mindly-crypto/static/js/runtime-main.67749081.js",
     "runtime-main.js.map": "/mindly-crypto/static/js/runtime-main.67749081.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/mindly-crypto/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.ae8a0802.chunk.js": "/mindly-crypto/static/js/2.ae8a0802.chunk.js",
     "static/js/2.ae8a0802.chunk.js.map": "/mindly-crypto/static/js/2.ae8a0802.chunk.js.map",
     "index.html": "/mindly-crypto/index.html",
-    "precache-manifest.aa322334fee77bde17038cb05597dc6a.js": "/mindly-crypto/precache-manifest.aa322334fee77bde17038cb05597dc6a.js",
+    "precache-manifest.92b68d95d2f7d83e6bfe15d89b62a065.js": "/mindly-crypto/precache-manifest.92b68d95d2f7d83e6bfe15d89b62a065.js",
     "service-worker.js": "/mindly-crypto/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/mindly-crypto/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.821d5153.chunk.css.map": "/mindly-crypto/static/css/main.821d5153.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.ae8a0802.chunk.js",
     "static/css/main.821d5153.chunk.css",
-    "static/js/main.c83c76cd.chunk.js"
+    "static/js/main.8f1d0b08.chunk.js"
   ]
 }
