@@ -45,7 +45,7 @@ class FormComponent extends Component {
 
  
 
-  addCrypto = (cryptoId) => {
+  addCrypto = (e) => {
   
 
     let Crypto = {
