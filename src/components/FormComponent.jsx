@@ -24,7 +24,7 @@ class FormComponent extends Component {
     this.changecurrentMarketValueHandler = this.changecurrentMarketValueHandler.bind(
       this
     );
-    this.AddCrypto = this.AddCrypto.bind(this);
+    this.addCrypto = this.addCrypto.bind(this);
     this.ShowCurrentDate = this.ShowCurrentDate.bind(this);
 
     CryptoService.getMarketsData().then((data) => {
