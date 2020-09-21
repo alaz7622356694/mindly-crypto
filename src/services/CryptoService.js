@@ -12,8 +12,9 @@ class CryptoService {
     return axios.get(CRYPTO_API_BASE_URL + "/" + cryptoId).then((res) => res);
   }
 
-  AddCrypto(crypto) {
-    return axios.post(CRYPTO_API_BASE_URL, crypto).then((res) => res);
+  addCrypto(crypto) {
+    const res = await axios.post(CRYPTO_API_BASE_URL, crypto);
+      return res;
   }
 
   getMarketsData() {

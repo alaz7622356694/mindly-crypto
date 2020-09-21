@@ -43,7 +43,7 @@ class FormComponent extends Component {
     return date + "/" + month + "/" + year;
   };
 
-  AddCrypto = (e) => {
+  addCrypto = (e) => {
     e.preventDefault();
 
     let Crypto = {
@@ -54,7 +54,7 @@ class FormComponent extends Component {
       currentMarketValue: this.markets.get(this.state.value),
     };
 
-    CryptoService.AddCrypto(Crypto).then((res) => {
+    CryptoService.addCrypto(Crypto).then((res) => {
       this.setState({ message: "Crypto added successfuly." });
     });
   };
@@ -142,7 +142,7 @@ class FormComponent extends Component {
               </div>
               <br></br>
             </div>
-            <button className="btn btn-primary" onClick={this.AddCrypto}>
+            <button className="btn btn-primary" onClick={this.addCrypto}>
               Save
             </button>
           </form>
