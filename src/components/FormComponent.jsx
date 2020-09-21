@@ -26,6 +26,7 @@ class FormComponent extends Component {
     );
     this.addCrypto = this.addCrypto.bind(this);
     this.ShowCurrentDate = this.ShowCurrentDate.bind(this);
+    this.reloadCryptoList = this.reloadCryptoList.bind(this);
 
     CryptoService.getMarketsData().then((data) => {
       data.data.map((item) => {
@@ -43,9 +44,13 @@ class FormComponent extends Component {
     return date + "/" + month + "/" + year;
   };
 
- 
+  reloadCryptoList() {
+    CryptoService.getCrypto().then((res) => {
+      this.setState({ crypto: res.data });
+    });
+  }
 
-  addCrypto(crypto)  {
+  addCrypto()  {
     let Crypto = {
       cryptocurrency: this.state.value,
       amount: this.state.amount,
@@ -55,8 +60,9 @@ class FormComponent extends Component {
     };
 
     CryptoService.addCrypto(Crypto).then((res) => {
-      this.setState({ message: "Crypto added successfuly." } );
+      this.setState({ message: "Crypto added successfuly." } , this.reloadCryptoList );
     });
+    
   };
 
   changeCryptoHandler = (event) => {
