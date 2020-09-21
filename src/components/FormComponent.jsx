@@ -45,7 +45,7 @@ class FormComponent extends Component {
   };
  
 
-  addCrypto(crypto)  {
+  addCrypto()  {
       
     let Crypto = {
       cryptocurrency: this.state.value,
@@ -55,8 +55,10 @@ class FormComponent extends Component {
       currentMarketValue: this.markets.get(this.state.value),
     };
 
-    CryptoService.addCrypto(Crypto).then((res) => {
+    CryptoService.addCrypto(Crypto).then(() => {
       this.setState({ message: "Crypto added successfuly." } );
+      CryptoService.getCrypto();
+      
     });
     
   };
@@ -85,7 +87,7 @@ class FormComponent extends Component {
           <h2>Please enter an item to your portfolio</h2>
         </div>
         <div className=" container-sm card-body bg-light text-dark">
-          <form onSubmit={ (e) =>{this.addCrypto(crypto)}} className="form" role="form">
+          <form onSubmit={ () =>{this.addCrypto()}} className="form" role="form">
             
               <div className="form-group ">
                 {" "}

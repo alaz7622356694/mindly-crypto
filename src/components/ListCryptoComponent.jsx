@@ -19,9 +19,11 @@ class ListCryptoComponent extends Component {
   }
 
   reloadCryptoList() {
-    CryptoService.getCrypto().then((res) => {
+    CryptoService.getCrypto()
+  /*  .then((res) => {
       this.setState({ crypto: res.data });
-    });
+    });**/
+    this.setState({crypto:CryptoService.cryptos});
   }
 
   addCrypto() {
@@ -29,7 +31,7 @@ class ListCryptoComponent extends Component {
   }
 
   deleteCrypto(id) {
-    CryptoService.deleteCrypto(id).then((res) => {
+    CryptoService.deleteCrypto(id).then(_ => {
       this.setState({
         crypto: this.state.crypto.filter((crypto) => crypto.id !== id),
       });
