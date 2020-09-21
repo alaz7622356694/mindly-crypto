@@ -43,6 +43,16 @@ class FormComponent extends Component {
     return date + "/" + month + "/" + year;
   };
 
+  componentDidMount() {
+    this.reloadCryptoList();
+  }
+
+  reloadCryptoList() {
+    CryptoService.getCrypto().then((res) => {
+      this.setState({ crypto: res.data });
+    });
+  }
+
   addCrypto = (e) => {
     e.preventDefault();
 
@@ -74,6 +84,7 @@ class FormComponent extends Component {
   changecurrentMarketValueHandler = (event) => {
     this.setState({ currentMarketValue: event.target.value });
   };
+
 
   render() {
     return (
