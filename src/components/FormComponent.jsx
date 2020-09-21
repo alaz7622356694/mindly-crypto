@@ -43,18 +43,10 @@ class FormComponent extends Component {
     return date + "/" + month + "/" + year;
   };
 
-  componentDidMount() {
-    this.reloadCryptoList();
-  }
-
-  reloadCryptoList() {
-    CryptoService.getCrypto().then((res) => {
-      this.setState({ crypto: res.data });
-    });
-  }
+ 
 
   addCrypto = (e) => {
-    e.preventDefault();
+  
 
     let Crypto = {
       cryptocurrency: this.state.value,
