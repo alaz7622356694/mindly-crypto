@@ -85,8 +85,8 @@ class FormComponent extends Component {
           <h2>Please enter an item to your portfolio</h2>
         </div>
         <div className=" container-sm card-body bg-light text-dark">
-          <form className="form-vertical" role="form">
-            <div className="form-group ">
+          <form onSubmit={ (e) =>{this.addCrypto(crypto)}} className="form" role="form">
+            
               <div className="form-group ">
                 {" "}
                 <label>Cryptocurrency type</label>
@@ -120,12 +120,13 @@ class FormComponent extends Component {
               </div>
 
               <div className="form-group">
-                <label>Amount</label>
-                <input
+                <label >Amount</label>
+                <input 
                   type="number"
+                  min="0.00" max="10000.00" step="0.01"
                   placeholder="Amount"
                   name="amount"
-                  className="form-control w-25"
+                  className="form-control w-25 "
                   required
                   value={this.state.amount}
                   onChange={this.changeAmountHandler}
@@ -144,10 +145,8 @@ class FormComponent extends Component {
                 </label>
               </div>
               <br></br>
-            </div>
-            <button className="btn btn-primary" onClick={ (e) =>{this.addCrypto(crypto)}}>
-              Save
-            </button>
+            
+              <input type="submit" className="btn btn-outline-primary waves-effect" value="Add" />
           </form>
         </div>
       </div>
