@@ -10,8 +10,8 @@ class InfoComponent extends Component {
 
   render() {
     return (
-      <div className="container-fluid bg-primary p-5">
-        <div class="card-deck text-light">
+      <div className="container-fluid pt-5">
+        <div class="card-deck text-light ">
           <div class="card bg-dark">
             <div class="card-header">
               <img
@@ -20,7 +20,7 @@ class InfoComponent extends Component {
                 alt="Cinque Terre"
               ></img>
             </div>
-            <div class="card-body text-justify">
+            <div class="card-body bg-secondry text-justify">
               <p class="card-text align-left">
                 Bitcoin is a cryptocurrency invented in 2008 by an unknown
                 person or group of people using the name Satoshi Nakamoto and

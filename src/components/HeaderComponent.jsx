@@ -3,30 +3,25 @@ import React, { Component } from "react";
 class HeaderComponent extends Component {
   render() {
     return (
-      <div>
-        <header>
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <a class="navbar-brand" href="#">
+      
+        <header >
+          <nav className="navbar navbar-expand-lg fixed-top navbar-dark  pmd-navbar pmd-z-depth">
+            <a className="navbar-brand navbar-fixed-top" href="https://alaz7622356694.github.io/mindly-crypto">
               Mindly
             </a>
             <button
               type="button"
-              class="navbar-toggler"
+              className="navbar-toggler"
               data-toggle="collapse"
               data-target="#navbarCollapse"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div
-              class="collapse navbar-collapse justify-content-between sticky-top"
-              id="navbarCollapse"
-            >
-              <div class="navbar-nav"></div>
-            </div>
+            
           </nav>
         </header>
-      </div>
+      
     );
   }
 }
