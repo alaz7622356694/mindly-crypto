@@ -41,7 +41,7 @@ class ListCryptoComponent extends Component {
 
   render() {
     return (
-      <div className=" container-fluid card  bg-dark">
+      <div className=" container-sm card  bg-dark">
         <div className="container-sm card-header bg-primary text-light text-center py-2 ">
           <h2>Your portfolio items</h2>
         </div>

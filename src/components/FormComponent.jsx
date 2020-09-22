@@ -125,7 +125,7 @@ class FormComponent extends Component {
                 <label >Amount</label>
                 <input 
                   type="number"
-                  min="0.00" max="10000.00" step="0.01"
+                  min="1" max="1000000.0" step="0.1"
                   placeholder="Amount"
                   name="amount"
                   className="form-control w-25 "
