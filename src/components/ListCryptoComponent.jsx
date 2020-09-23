@@ -21,8 +21,7 @@ class ListCryptoComponent extends Component {
   reloadCryptoList() {
     CryptoService.getCrypto()
     .then((res) => {
-        this.setState({crypto:CryptoService.cryptos});
-     /* this.setState({ crypto: res.data });*/
+     this.setState({ crypto: res.data });
     });
     
   }
