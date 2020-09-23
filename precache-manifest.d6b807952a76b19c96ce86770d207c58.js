@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f4c6b5bbffb06c9ce5afe1da48e6769",
+    "revision": "1e97a56b292e7084b48fc619b668135a",
     "url": "/mindly-crypto/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mindly-crypto/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "bd5920c831589708066a",
+    "revision": "c1fdff9aea97500e147e",
     "url": "/mindly-crypto/static/css/main.3f425a84.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mindly-crypto/static/js/2.ae8a0802.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bd5920c831589708066a",
-    "url": "/mindly-crypto/static/js/main.2aa5b6cd.chunk.js"
+    "revision": "c1fdff9aea97500e147e",
+    "url": "/mindly-crypto/static/js/main.4f334ba1.chunk.js"
   },
   {
     "revision": "3f6790629903f72e4751",
