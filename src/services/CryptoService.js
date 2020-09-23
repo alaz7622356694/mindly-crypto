@@ -4,10 +4,10 @@ const marketDataUrl =
   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=100&page=1&sparkline=false";
 
 class CryptoService {
-  
+  cryptos = [];
 
   getCrypto() {
-    return axios.get(CRYPTO_API_BASE_URL);
+    return axios.get(CRYPTO_API_BASE_URL).then(res=>{this.cryptos=res.data});
   }
 
   getCryptoById(cryptoId) {

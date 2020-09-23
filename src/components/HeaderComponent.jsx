@@ -7,7 +7,7 @@ class HeaderComponent extends Component {
         <header >
           <nav className="navbar navbar-expand-lg fixed-top navbar-dark  pmd-navbar pmd-z-depth">
             <a className="navbar-brand navbar-fixed-top" href="https://alaz7622356694.github.io/mindly-crypto">
-              Mindly
+              <h4 className="text-primary">Mindly</h4>
             </a>
             <button
               type="button"
