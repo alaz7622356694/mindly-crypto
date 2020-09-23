@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "834d515535e4b86e3d2ae38bfb2c85e2",
+    "revision": "915099d24b9699809c73eea419d96a8f",
     "url": "/mindly-crypto/index.html"
   },
   {
