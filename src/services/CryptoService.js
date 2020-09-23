@@ -6,7 +6,7 @@ const marketDataUrl =
 class CryptoService {
  
   getCrypto() {
-    return axios.get(CRYPTO_API_BASE_URL);
+    return axios.get(CRYPTO_API_BASE_URL).then((res)=>{res.data});
   }
 
   getCryptoById(cryptoId) {
