@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CryptoService from "../services/CryptoService";
+import ListCryptoComponent from "./ListCryptoComponent";
 
 class FormComponent extends Component {
   markets = new Map([]);
@@ -57,7 +58,7 @@ class FormComponent extends Component {
 
     CryptoService.addCrypto(Crypto).then(() => {
       this.setState({ message: "Crypto added successfuly." } );
-      CryptoService.getCryptoById() ; /*(res=>res.data)*/
+      ListCryptoComponent.componentDidMount() ; 
 
       
     });
