@@ -1,3 +1,7 @@
+This project is my first experience with using RESTful API .
+Back-end is written by Java and Spring boot framework.
+Front-end is written by Bootstrap and React.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
