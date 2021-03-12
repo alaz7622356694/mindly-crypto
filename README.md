@@ -1,6 +1,7 @@
-This project is my first experience with using RESTful API .
+This project is my first experience with using RESTful API and CRUD operations.
 Back-end is written by Java and Spring boot framework.
 Front-end is written by Bootstrap and React.
+https://alaz7622356694.github.io/mindly-crypto/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
